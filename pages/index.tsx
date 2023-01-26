@@ -96,7 +96,7 @@ const Home: NextPage = () => {
             </div>
             <div className={styles.Container}>
               <FaRegEnvelope className={styles.Container__iconsize}/>
-              <p>Correo: <a href="http://hotelcluboasis.com/"><span>hotelcluboasis@gmail.com</span></a></p>
+              <p>hotelcluboasis@gmail.com</p>
             </div>
             <div className={styles.Container}>
               <ImLocation className={styles.Container__iconsize}/>
