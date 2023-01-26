@@ -30,6 +30,12 @@ const Home: NextPage = () => {
             <div>
               <img src="/pages/home/8.jpg" />
             </div>
+            <div>
+              <img src="/pages/home/billar.jpg" />
+            </div>
+            <div>
+              <img src="/pages/home/sauna.jpg" />
+            </div>
           </Carousel>
         </div>
 
