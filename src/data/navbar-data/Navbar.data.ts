@@ -19,6 +19,6 @@ export const DataContactoCorporativos: ItemNavbarProps[] = [
   {
     id: 4,
     url: '#contacto',
-    name: 'Contacto'
+    name: 'Contáctanos'
   }
 ]
