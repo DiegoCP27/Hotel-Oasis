@@ -1,0 +1,48 @@
+@use 'styles/mixins/mediaQueries';
+
+.Humburguer {
+  position: relative;
+  align-self: center;
+  font-size: 1.5rem;
+  width: 1.5rem;
+  margin-left: 2rem;
+  grid-area: centerMenu;
+  color: white;
+}
+
+.dropdownContainer {
+  display: flex;
+  top: 30%; /* o el valor que desees */
+  right: 2rem;
+  z-index: 1;
+  align-items: center;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+}
+
+.show {
+  position: absolute;
+  display: block;
+  top: 100%;
+  width: 90%;
+  right: 5%;
+  background-color: #252525;
+}
+
+.Menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  color: white;
+}
+
+.Links {
+  display: flex;
+  color: white;
+  position: relative;
+  padding: .8rem 1.5rem;
+}
