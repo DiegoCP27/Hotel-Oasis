@@ -41,7 +41,7 @@ const Lightbox = ({ images }: any) => {
   return (
     <div>
       <div className={styles.title}>
-        <h1>Nuestras Habitaciones</h1>
+        <h1>HABITACIONES</h1>
         <div className={styles.Line}/>
       </div>
       <div className={styles.imageGrid}>
