@@ -70,6 +70,10 @@
     @include mediaQueries.for-desktop-new {
       height: 50vh;
     }
+
+    h1 {
+      padding: 0rem 1rem;
+    }
   }
 }
 
