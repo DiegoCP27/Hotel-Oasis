@@ -48,6 +48,10 @@
       }
     }
 
+    .Izq {
+      text-align: left;
+    }
+
     @include mediaQueries.for-desktop-new {
       width: 50rem
     }

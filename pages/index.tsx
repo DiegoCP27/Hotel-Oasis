@@ -46,13 +46,13 @@ const Home: NextPage = () => {
           <div className={styles.Section2__texto}>
             <h4><b><em>HOTEL OASIS</em></b></h4>
             <p>Carabayllo es una ciudad en la que la gente sabe cómo divertirse con estilo, y para responder a las necesidades del visitante, nada mejor que el Hotel Oasis, un espacio pensado para mezclar el disfrute y la exclusividad. Agrégale romanticismo a tus fechas especiales con los packs decorativos que tenemos para ti.</p>
-            <ul>
-              <li className={styles.Icon}><BsCheck className={styles.Icon__icon}/> Experiencia.</li>
-              <li className={styles.Icon}><BsCheck className={styles.Icon__icon}/> Calidad de servicio.</li>
-              <li className={styles.Icon}><BsCheck className={styles.Icon__icon}/> Privacidad Garantizada.</li>
-              <li className={styles.Icon}><BsCheck className={styles.Icon__icon}/> Variedad y disfrute.</li>
-              <li className={styles.Icon}><BsCheck className={styles.Icon__icon}/> Ambiente sensual y Temático.</li>
-            </ul>
+            <div className={styles.Izq}>
+              <p className={styles.Icon}><BsCheck className={styles.Icon__icon}/> Experiencia.</p>
+              <p className={styles.Icon}><BsCheck className={styles.Icon__icon}/> Calidad de servicio.</p>
+              <p className={styles.Icon}><BsCheck className={styles.Icon__icon}/> Privacidad Garantizada.</p>
+              <p className={styles.Icon}><BsCheck className={styles.Icon__icon}/> Variedad y disfrute.</p>
+              <p className={styles.Icon}><BsCheck className={styles.Icon__icon}/> Ambiente sensual y Temático.</p>
+            </div>
           </div>
         </div>
 
