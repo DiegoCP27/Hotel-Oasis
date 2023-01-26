@@ -86,6 +86,7 @@ const Home: NextPage = () => {
 
         <video className={styles.Video} controls>
           <source src="/pages/home/video.mp4" type="video/mp4"/>
+          <source src="/pages/home/video.MOV" type="video/MOV"/>
         </video>
 
         <div id={'contacto'} className={styles.Section6}>
