@@ -1,0 +1,15 @@
+@use './mediaQueries';
+
+@mixin background-image($image) {
+  background: $image;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin section($height) {
+  min-height: $height;
+  background-color: var(--background-color);
+  position: relative;
+  overflow: hidden;
+}

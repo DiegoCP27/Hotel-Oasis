@@ -1,0 +1,5 @@
+@mixin for-desktop-new {
+  @media only screen and (min-width: 60rem) {
+    @content;
+  }
+}
