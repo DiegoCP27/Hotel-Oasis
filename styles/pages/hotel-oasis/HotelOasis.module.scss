@@ -127,6 +127,7 @@
     font-weight: bold;
     gap: 1rem;
     padding-top: 1.5em;
+    font-family: 'Lucida Calligraphy';
   
     .Line {
       height: 0.1rem;
@@ -229,5 +230,18 @@
         font-weight: 700;
       }
     }
+  }
+}
+
+.Video{
+  padding: 3rem 3rem;
+  @media (min-width: 550px) {
+    padding: 3rem clamp(5rem,10vw,10rem);
+  }
+  @media (min-width: 960px) {
+    padding: 3rem clamp(20rem,35vw,35rem);
+  }
+  @media (min-width: 1626px) {
+    padding: 3rem clamp(30rem,45vw,45rem);
   }
 }

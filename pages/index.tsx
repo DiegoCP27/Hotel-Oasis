@@ -58,7 +58,7 @@ const Home: NextPage = () => {
 
         <div className={styles.Section3}>
           <div className={styles.Section3__fondo}>
-            <h1>Bienvenido a su Hotel Oasis… Ven y déjate llevar</h1>
+            <h1><em>Bienvenido a su Hotel Oasis... Ven y déjate llevar...</em></h1>
           </div>
         </div>
 
@@ -69,20 +69,24 @@ const Home: NextPage = () => {
         <Carousel className={styles.Section5} showStatus={false} infiniteLoop={true} showThumbs={false} autoPlay={true} swipeable={true} emulateTouch={true} interval={3000} showArrows={false} showIndicators={false} >
             <div className={styles.Fondo}>
                 <ImHeart />
-                <p className={styles.Fondo__frase}>Mi opinión en lo que se refiere al placer es que hay que emplear todos los sentidos.</p>
-                <p><em>Marqués de Sade</em></p>
+                <p className={styles.Fondo__frase}><em>Mi opinión en lo que se refiere al placer es que hay que emplear todos los sentidos.</em></p>
+                <p>Marqués de Sade</p>
             </div>
             <div className={styles.Fondo}>
                 <ImHeart/>
-                <p className={styles.Fondo__frase}>Un orgasmo al día es la llave de la alegría.</p>
-                <p><em>Anónimo</em></p>
+                <p className={styles.Fondo__frase}><em>Un orgasmo al día es la llave de la alegría.</em></p>
+                <p>Anónimo</p>
             </div>
             <div className={styles.Fondo}>
                 <ImHeart/>
-                <p className={styles.Fondo__frase}>Y si me ves mordiéndome los labios, es precisamente para evitar terminar arrancándote los tuyos.</p>
-                <p><em>Edwin Vergara</em></p>
+                <p className={styles.Fondo__frase}><em>Y si me ves mordiéndome los labios, es precisamente para evitar terminar arrancándote los tuyos.</em></p>
+                <p>Edwin Vergara</p>
             </div>
         </Carousel>
+
+        <video className={styles.Video} controls>
+          <source src="/pages/home/video.mp4" type="video/mp4"/>
+        </video>
 
         <div id={'contacto'} className={styles.Section6}>
           <div className={styles.title}>
