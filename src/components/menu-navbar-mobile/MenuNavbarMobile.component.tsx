@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { IoMenu, IoCloseSharp } from 'react-icons/io5'
 import { ItemNavbarProps } from '@/models'
 import styles from './MenuNavbarMobile.module.scss'
-import Links from '../links/Links.component'
 
 interface MenuNavbarDesktopProps {
   listItems: ItemNavbarProps[]
