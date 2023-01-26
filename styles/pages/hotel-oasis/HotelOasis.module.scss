@@ -1,0 +1,216 @@
+@use 'styles/mixins/utilities';
+@use 'styles/mixins/mediaQueries';
+
+.Section2 {
+  @include utilities.section(90vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  gap: 2rem;
+  margin: 1rem;
+
+  @include mediaQueries.for-desktop-new {
+    @include utilities.section(50vh);
+    flex-direction: row;
+    gap: 10rem;
+    margin: 0rem 20rem;
+  }
+
+  &__imagenizq {
+    padding: clamp(.5rem,5vw,5rem);
+    @include mediaQueries.for-desktop-new {
+      padding: 0rem;
+      width: 30rem;
+    }
+  }
+
+  &__texto {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    gap: 1rem;
+
+    .Icon {
+      display: flex;
+      align-items: center;
+      line-height: 2rem;
+      gap: .5rem;
+  
+      &__icon {
+        max-width: min-content;
+      }
+    }
+
+    @include mediaQueries.for-desktop-new {
+      grid-column-start: 4;
+      grid-column-end: 5;
+    }
+  }
+}
+
+.Section3 {
+  @include utilities.background-image(
+  url('/pages/home/4.jpg')
+  );
+  background-attachment: fixed;
+
+  &__fondo {
+    width: 100%;
+    height: 25vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: clamp(1.13rem,3vw,2.75rem);
+    @include mediaQueries.for-desktop-new {
+      height: 50vh;
+    }
+  }
+}
+
+.Section4 {
+  padding-bottom: clamp(2rem,4vw,4rem);
+}
+
+.Section5{
+  @include utilities.background-image(
+  url('/pages/home/mujer.jpg')
+  );
+  background-attachment: fixed;
+
+  .Fondo {
+    width:100%;
+    height: 40vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    gap: 1rem;
+
+    &__frase {
+      font-size: clamp(1rem,2vw,2rem);
+      margin: 1rem;
+    }
+  }
+}
+
+.Section6 {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3rem,4vw,4rem);
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: clamp(1.875rem,2.5vw,2.5rem);
+    color: #444;
+    font-weight: bold;
+    gap: 1rem;
+    padding-top: 1.5em;
+  
+    .Line {
+      height: 0.1rem;
+      width: 15%;
+      background-color: #444;
+    }
+  }
+
+  .Contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    @include mediaQueries.for-desktop-new {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .Container{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: clamp(1rem,1.3vw,1.3rem);
+      gap: 2.5rem;
+  
+      &__iconsize{
+        font-size: 1.5rem;
+      }
+  
+      @include mediaQueries.for-desktop-new {
+        width: 20%;
+      }
+    }
+  }
+
+  .Mapa{
+    display: grid;
+
+    @include mediaQueries.for-desktop-new {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__mapa{
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+  }
+}
+
+.Section7 {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding: 2.5rem 1rem;
+
+  @include mediaQueries.for-desktop-new {
+    padding: clamp(3rem,5vw,5rem) clamp(10rem,24vw,24rem);
+  }
+
+  .Container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: justify;
+
+    h1 {
+      font-size: 2.25rem;
+      font-family: 'Raleway', sans-serif;
+      color: #222;
+    }
+
+    p {
+      font-size: 0.875rem;
+      color: #444;
+    }
+  }
+
+  .Container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #444;
+
+    h1 {
+      padding-bottom: .5rem;
+    }
+
+    p {
+      font-size: 0.875rem;
+
+      span {
+        color: #5b0000;
+        font-weight: 700;
+      }
+    }
+  }
+}
