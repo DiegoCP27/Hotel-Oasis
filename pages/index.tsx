@@ -38,7 +38,7 @@ const Home: NextPage = () => {
         <div id={'nosotros'} className={styles.Section2}>
           <img className={styles.Section2__imagenizq} alt='' src={"/pages/home/Piscina.jpg"}/>
           <div className={styles.Section2__texto}>
-            <h4><b>HOTEL OASIS</b></h4>
+            <h4><b><em>HOTEL OASIS</em></b></h4>
             <p>Carabayllo es una ciudad en la que la gente sabe cómo divertirse con estilo, y para responder a las necesidades del visitante, nada mejor que el Hotel Oasis, un espacio pensado para mezclar el disfrute y la exclusividad. Agrégale romanticismo a tus fechas especiales con los packs decorativos que tenemos para ti.</p>
             <ul>
               <li className={styles.Icon}><BsCheck className={styles.Icon__icon}/> Experiencia.</li>
@@ -84,13 +84,13 @@ const Home: NextPage = () => {
             <div className={styles.Line}/>
           </div>
           <div className={styles.Contacto}>
-            <div className={styles.Container}>
+            <div className={`${styles.Container} ${styles.Container__altura}`}>
               <ImMobile className={styles.Container__iconsize}/>
               <p>Llamar: +51 930 667 265<br/><br/>Atención: 24hrs</p>
             </div>
             <div className={styles.Container}>
               <FaRegEnvelope className={styles.Container__iconsize}/>
-              <p>Web: <a href="http://hotelcluboasis.com/"><span>www.hotelcluboasis.com</span></a></p>
+              <p>Correo: <a href="http://hotelcluboasis.com/"><span>hotelcluboasis@gmail.com</span></a></p>
             </div>
             <div className={styles.Container}>
               <ImLocation className={styles.Container__iconsize}/>
